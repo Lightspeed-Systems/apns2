@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/sideshow/apns2"
-	"github.com/sideshow/apns2/certificate"
+	"github.com/Lightspeed-Systems/apns2"
+	"github.com/Lightspeed-Systems/apns2/certificate"
 )
 
 func main() {
