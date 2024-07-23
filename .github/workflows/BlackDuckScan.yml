@@ -1,0 +1,21 @@
+name: Black Duck Scan
+
+on:
+  workflow_dispatch:
+  release:
+    types: [ published ]
+  pull_request:
+    types: [ opened, synchronize ]
+    branches:
+      - main
+
+permissions:
+  actions: read
+  contents: read
+  security-events: write
+  checks: write
+
+jobs:
+  blackduck:
+    uses:  Lightspeed-Systems/github-reusable-workflows/.github/workflows/blackduck.yml@main
+    secrets: inherit
