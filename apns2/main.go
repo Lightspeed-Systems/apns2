@@ -9,7 +9,7 @@ import (
 
 	"github.com/Lightspeed-Systems/apns2"
 	"github.com/Lightspeed-Systems/apns2/certificate"
-	"gopkg.in/alecthomas/kingpin.v2"
+	"github.com/alecthomas/kingpin/v2"
 )
 
 var (
